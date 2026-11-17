@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Relay — Fast delivery across Saudi Arabia</title>
+  <meta name="description" content="Relay moves your parcels across Saudi Arabia — same-day in the city, next-day between cities.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="#" class="logo" aria-label="Relay">
+        <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--accent)"/><path d="M9 22V10h7a4 4 0 0 1 0 8h-3l6 4" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span data-i18n="brand">Relay</span>
+      </a>
+      <nav class="links">
+        <a href="#how" data-i18n="nav_how">How it works</a>
+        <a href="#services" data-i18n="nav_services">Services</a>
+        <a href="#cities" data-i18n="nav_cities">Cities</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="lang" id="lang" type="button" aria-label="Switch language">العربية</button>
+        <a href="#waitlist" class="btn btn-sm" data-i18n="cta_short">Get early access</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow" data-i18n="eyebrow">Launching in Riyadh · 2027</p>
+          <h1 data-i18n="hero_title">Your parcels, relayed across the Kingdom.</h1>
+          <p class="lead" data-i18n="hero_lead">Same-day delivery inside the city, next-day between cities. Live tracking, cash or card on delivery, and drivers you can rate.</p>
+          <div class="hero-cta">
+            <a href="#waitlist" class="btn" data-i18n="cta">Join the waitlist</a>
+            <a href="#how" class="btn btn-ghost" data-i18n="cta_secondary">See how it works</a>
+          </div>
+          <ul class="stats">
+            <li><strong data-i18n="stat1_n">2h</strong><span data-i18n="stat1_l">avg. in-city delivery</span></li>
+            <li><strong data-i18n="stat2_n">13</strong><span data-i18n="stat2_l">regions covered</span></li>
+            <li><strong data-i18n="stat3_n">24/7</strong><span data-i18n="stat3_l">live tracking</span></li>
+          </ul>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <div class="track-head">
+            <span class="dot"></span>
+            <span data-i18n="track_title">Shipment RLY-20417</span>
+          </div>
+          <ol class="track">
+            <li class="done"><b data-i18n="t1">Picked up</b><small data-i18n="t1s">Olaya, Riyadh · 10:12</small></li>
+            <li class="done"><b data-i18n="t2">At Relay hub</b><small data-i18n="t2s">North Riyadh hub · 11:40</small></li>
+            <li class="now"><b data-i18n="t3">Out for delivery</b><small data-i18n="t3s">Driver: Faisal · ★ 4.9</small></li>
+            <li><b data-i18n="t4">Delivered</b><small data-i18n="t4s">ETA 13:05</small></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <div class="wrap">
+        <h2 data-i18n="how_title">How Relay works</h2>
+        <div class="grid3">
+          <article class="step"><span class="num">1</span><h3 data-i18n="s1_t">Book in seconds</h3><p data-i18n="s1_d">Enter pickup and drop-off, choose a size, and get an instant price.</p></article>
+          <article class="step"><span class="num">2</span><h3 data-i18n="s2_t">We pick it up</h3><p data-i18n="s2_d">The nearest driver collects your parcel — usually within 30 minutes.</p></article>
+          <article class="step"><span class="num">3</span><h3 data-i18n="s3_t">Track to the door</h3><p data-i18n="s3_d">Follow it live on the map and get a photo when it's delivered.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section alt">
+      <div class="wrap">
+        <h2 data-i18n="svc_title">Built for people and businesses</h2>
+        <div class="grid3">
+          <article class="card"><h3 data-i18n="c1_t">Same-day city</h3><p data-i18n="c1_d">Documents, gifts and small parcels across town in hours.</p></article>
+          <article class="card"><h3 data-i18n="c2_t">City-to-city</h3><p data-i18n="c2_d">Next-day delivery between Riyadh, Jeddah, Dammam and beyond.</p></article>
+          <article class="card"><h3 data-i18n="c3_t">Relay for Business</h3><p data-i18n="c3_d">API and dashboard for online stores, with COD and bulk pickups.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="cities" class="section">
+      <div class="wrap">
+        <h2 data-i18n="cities_title">Where we're starting</h2>
+        <ul class="cities">
+          <li class="live" data-i18n="city1">Riyadh</li>
+          <li data-i18n="city2">Jeddah</li>
+          <li data-i18n="city3">Dammam</li>
+          <li data-i18n="city4">Makkah</li>
+          <li data-i18n="city5">Madinah</li>
+          <li data-i18n="city6">Khobar</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="waitlist" class="section cta-band">
+      <div class="wrap narrow">
+        <h2 data-i18n="wl_title">Be first to try Relay</h2>
+        <p data-i18n="wl_lead">Leave your email and we'll let you know the moment we launch in your city.</p>
+        <form id="wl-form" class="wl-form">
+          <input type="email" required placeholder="you@example.com" aria-label="Email" id="wl-email">
+          <button class="btn" type="submit" data-i18n="wl_btn">Notify me</button>
+        </form>
+        <p class="wl-done" id="wl-done" hidden data-i18n="wl_done">Thanks! You're on the list.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> Relay KSA</span>
+      <span data-i18n="footer">Made in Saudi Arabia</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
