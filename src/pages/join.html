@@ -1,0 +1,87 @@
+---
+title: Become a supplier — Relay
+description: Event management, staffing and equipment companies — receive qualified business and government requests across Saudi Arabia.
+---
+  <main>
+    <section class="section page-head">
+      <div class="wrap narrow">
+        <p class="eyebrow" data-i18n="jn_eyebrow">For suppliers</p>
+        <h1 class="h1-sm" data-i18n="jn_title">Become a Relay supplier</h1>
+        <p class="lead center" data-i18n="jn_lead">Get qualified requests from companies and government entities across the Kingdom. Free to join — a small fee only on contracts you win.</p>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="wrap form-wrap">
+        <form id="jn-form" class="stack-form card" data-endpoint="/api/join" data-msg="jn-msg" novalidate>
+          <fieldset>
+            <legend data-i18n="jn_sec1">1 · About you</legend>
+            <div class="chips" role="radiogroup">
+              <label class="chip"><input type="radio" name="supplier_type" value="company" required checked><span data-i18n="st_company">Company</span></label>
+              <label class="chip"><input type="radio" name="supplier_type" value="freelancer"><span data-i18n="st_freelancer">Freelancer</span></label>
+            </div>
+            <div class="row2">
+              <label><span data-i18n="f_company">Company or full name</span><input name="company" required autocomplete="organization"></label>
+              <label><span data-i18n="f_cr">CR / freelance permit no. (optional)</span><input name="cr_number" inputmode="numeric" dir="ltr"></label>
+            </div>
+            <div class="row3">
+              <label><span data-i18n="f_name">Your name</span><input name="name" required autocomplete="name"></label>
+              <label><span data-i18n="f_email">Work email</span><input name="email" type="email" required autocomplete="email"></label>
+              <label><span data-i18n="f_phone">Mobile</span><input name="phone" type="tel" required autocomplete="tel" placeholder="05X XXX XXXX" dir="ltr"></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend data-i18n="jn_sec2">2 · What you offer</legend>
+            <div class="chips">
+              <label class="chip"><input type="checkbox" name="services" value="event_management"><span data-i18n="svc1_t">Event management</span></label>
+              <label class="chip"><input type="checkbox" name="services" value="event_staffing"><span data-i18n="svc2_t">Event staffing</span></label>
+              <label class="chip"><input type="checkbox" name="services" value="general_staffing"><span data-i18n="svc3_t">General staffing</span></label>
+              <label class="chip"><input type="checkbox" name="services" value="equipment"><span data-i18n="svc4_t">Equipment &amp; logistics</span></label>
+            </div>
+            <p class="field-label" data-i18n="f_contracts">Contracts you take</p>
+            <div class="chips" role="radiogroup">
+              <label class="chip"><input type="radio" name="contract_types" value="short"><span data-i18n="ct1_tag">Short-term</span></label>
+              <label class="chip"><input type="radio" name="contract_types" value="long"><span data-i18n="ct2_tag">Long-term</span></label>
+              <label class="chip"><input type="radio" name="contract_types" value="both" checked><span data-i18n="ct_both">Both</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend data-i18n="jn_sec3">3 · Where &amp; how big</legend>
+            <p class="field-label" data-i18n="f_cities">Cities you cover</p>
+            <div class="chips" data-city-chips></div>
+            <div class="row2">
+              <label><span data-i18n="f_capacity">Staff you can supply at once (optional)</span><input name="capacity" type="number" min="0" max="100000" inputmode="numeric"></label>
+              <label><span data-i18n="f_saudization">Saudization level (optional)</span>
+                <select name="nitaqat">
+                  <option value="" data-i18n="opt_none">Prefer not to say</option>
+                  <option value="platinum" data-i18n="n_platinum">Platinum</option>
+                  <option value="high_green" data-i18n="n_high_green">High green</option>
+                  <option value="mid_green" data-i18n="n_mid_green">Mid green</option>
+                  <option value="low_green" data-i18n="n_low_green">Low green</option>
+                  <option value="red" data-i18n="n_red">Red</option>
+                </select>
+              </label>
+            </div>
+            <label><span data-i18n="f_about">Tell us about your work (optional)</span>
+              <textarea name="message" rows="4" data-i18n-ph="f_about_ph" placeholder="Past events, clients, team size, equipment…"></textarea>
+            </label>
+          </fieldset>
+
+          <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn-wide" type="submit" data-i18n="jn_submit">Apply to join</button>
+          <p class="form-msg" id="jn-msg" role="status"></p>
+        </form>
+
+        <aside class="side-note">
+          <h3 data-i18n="jn_next_t">How verification works</h3>
+          <ol class="next">
+            <li data-i18n="jn_next1">We check your CR or freelance permit, VAT and GOSI registration.</li>
+            <li data-i18n="jn_next2">A short call to understand your capacity and past work.</li>
+            <li data-i18n="jn_next3">Once approved, you start receiving matching requests.</li>
+          </ol>
+        </aside>
+      </div>
+    </section>
+  </main>

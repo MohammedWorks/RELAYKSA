@@ -1,0 +1,15 @@
+{
+  "name": "relayksa",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "npm run build && wrangler pages dev --port 8788",
+    "db:create": "wrangler d1 create relayksa-db",
+    "db:migrate:local": "wrangler d1 migrations apply relayksa-db --local",
+    "db:migrate:remote": "wrangler d1 migrations apply relayksa-db --remote",
+    "requests:local": "wrangler d1 execute relayksa-db --local --command \"SELECT id, client_type, organization, services, city, contract_type, start_date, created_at FROM requests ORDER BY id DESC\"",
+    "suppliers:local": "wrangler d1 execute relayksa-db --local --command \"SELECT id, supplier_type, company, services, cities, contract_types, created_at FROM suppliers ORDER BY id DESC\"",
+    "deploy": "npm run build && wrangler pages deploy"
+  }
+}

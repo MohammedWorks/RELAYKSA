@@ -1,0 +1,87 @@
+---
+title: Post a request — Relay
+description: Tell Relay what your event or operation needs. Get matched quotes from verified event, staffing and equipment suppliers.
+---
+  <main>
+    <section class="section page-head">
+      <div class="wrap narrow">
+        <p class="eyebrow" data-i18n="rq_eyebrow">For businesses &amp; government</p>
+        <h1 class="h1-sm" data-i18n="rq_title">Post a request</h1>
+        <p class="lead center" data-i18n="rq_lead">Free to post. We'll send it to matching verified suppliers and come back with quotes — usually within 48 hours.</p>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="wrap form-wrap">
+        <form id="rq-form" class="stack-form card" data-endpoint="/api/request" data-msg="rq-msg" novalidate>
+          <fieldset>
+            <legend data-i18n="rq_sec1">1 · Who you are</legend>
+            <div class="chips" role="radiogroup">
+              <label class="chip"><input type="radio" name="client_type" value="government" required><span data-i18n="ct_gov">Government entity</span></label>
+              <label class="chip"><input type="radio" name="client_type" value="semi_government"><span data-i18n="ct_semi">Semi-government</span></label>
+              <label class="chip"><input type="radio" name="client_type" value="private"><span data-i18n="ct_private">Private company</span></label>
+            </div>
+            <div class="row2">
+              <label><span data-i18n="f_org">Organization</span><input name="organization" required autocomplete="organization"></label>
+              <label><span data-i18n="f_name">Your name</span><input name="name" required autocomplete="name"></label>
+            </div>
+            <div class="row2">
+              <label><span data-i18n="f_email">Work email</span><input name="email" type="email" required autocomplete="email"></label>
+              <label><span data-i18n="f_phone">Mobile</span><input name="phone" type="tel" required autocomplete="tel" placeholder="05X XXX XXXX" dir="ltr"></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend data-i18n="rq_sec2">2 · What you need</legend>
+            <div class="chips">
+              <label class="chip"><input type="checkbox" name="services" value="event_management"><span data-i18n="svc1_t">Event management</span></label>
+              <label class="chip"><input type="checkbox" name="services" value="event_staffing"><span data-i18n="svc2_t">Event staffing</span></label>
+              <label class="chip"><input type="checkbox" name="services" value="general_staffing"><span data-i18n="svc3_t">General staffing</span></label>
+              <label class="chip"><input type="checkbox" name="services" value="equipment"><span data-i18n="svc4_t">Equipment &amp; logistics</span></label>
+            </div>
+            <label><span data-i18n="f_desc">Describe your event or need</span>
+              <textarea name="description" rows="5" required data-i18n-ph="f_desc_ph" placeholder="e.g. 3-day exhibition at Riyadh Front, ~5,000 visitors/day. Need 40 ushers, 10 registration staff, and full AV."></textarea>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend data-i18n="rq_sec3">3 · When &amp; where</legend>
+            <div class="chips" role="radiogroup">
+              <label class="chip"><input type="radio" name="contract_type" value="short" required checked><span data-i18n="ct1_tag">Short-term</span></label>
+              <label class="chip"><input type="radio" name="contract_type" value="long"><span data-i18n="ct2_tag">Long-term</span></label>
+            </div>
+            <div class="row3">
+              <label><span data-i18n="f_city">City</span><select name="city" data-cities required></select></label>
+              <label><span data-i18n="f_start">Start date</span><input name="start_date" type="date" required></label>
+              <label><span data-i18n="f_end">End date (optional)</span><input name="end_date" type="date"></label>
+            </div>
+            <div class="row2">
+              <label><span data-i18n="f_headcount">Approx. headcount (optional)</span><input name="headcount" type="number" min="0" max="100000" inputmode="numeric"></label>
+              <label><span data-i18n="f_budget">Budget range (optional)</span>
+                <select name="budget">
+                  <option value="" data-i18n="opt_none">Prefer not to say</option>
+                  <option value="lt50k" data-i18n="b1">Under SAR 50k</option>
+                  <option value="50k-250k" data-i18n="b2">SAR 50k – 250k</option>
+                  <option value="250k-1m" data-i18n="b3">SAR 250k – 1M</option>
+                  <option value="gt1m" data-i18n="b4">Over SAR 1M</option>
+                </select>
+              </label>
+            </div>
+          </fieldset>
+
+          <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn-wide" type="submit" data-i18n="rq_submit">Send request</button>
+          <p class="form-msg" id="rq-msg" role="status"></p>
+        </form>
+
+        <aside class="side-note">
+          <h3 data-i18n="rq_next_t">What happens next</h3>
+          <ol class="next">
+            <li data-i18n="rq_next1">We review your request within one working day.</li>
+            <li data-i18n="rq_next2">Matching verified suppliers send their quotes.</li>
+            <li data-i18n="rq_next3">You compare and award — no obligation until you do.</li>
+          </ol>
+        </aside>
+      </div>
+    </section>
+  </main>
