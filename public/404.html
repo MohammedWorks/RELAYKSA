@@ -8,6 +8,7 @@
   <meta property="og:title" content="Page not found — Relay">
   <meta property="og:description" content="This page doesn't exist.">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#1c1c1c">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -16,9 +17,8 @@
 <body>
   <header class="nav">
     <div class="wrap nav-inner">
-      <a href="/" class="logo" aria-label="Relay">
-        <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--accent)"/><path d="M9 22V10h7a4 4 0 0 1 0 8h-3l6 4" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span data-i18n="brand">Relay</span>
+      <a href="/" class="logo" aria-label="Relay — home">
+        <img class="brand-img" src="/logo.png" alt="RELAY" width="120" height="25">
       </a>
       <nav class="links">
         <a href="/#how" data-i18n="nav_how">How it works</a>
@@ -44,6 +44,10 @@
   </main>
 
   <footer class="footer">
+    <div class="wrap footer-brand">
+      <img class="brand-img" src="/logo-full.png" alt="RELAY — Business without borders" width="200" height="60">
+      <p class="muted footer-tag" data-i18n="tagline_note">Events &amp; staffing marketplace for business and government in Saudi Arabia.</p>
+    </div>
     <div class="wrap footer-inner">
       <span>© <span class="year"></span> Relay KSA</span>
       <nav class="footer-links">

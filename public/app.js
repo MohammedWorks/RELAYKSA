@@ -1,7 +1,7 @@
 // ───────────────────────── Translations ─────────────────────────
 // English text lives in the HTML. Arabic overrides are keyed by data-i18n.
 const AR = {
-  brand: "ريلاي",
+  tagline_note: "منصة الفعاليات والتوظيف للشركات والجهات الحكومية في المملكة العربية السعودية.",
   nav_how: "كيف نعمل",
   nav_services: "الخدمات",
   nav_gov: "للجهات الحكومية",
@@ -25,6 +25,8 @@ const AR = {
   demo_r2: "مضيفون ومنظمون",
   demo_r3: "معدات صوت وإضاءة ومسرح", demo_q3: "تجهيز كامل",
   demo_r4: "إدارة الحشود",
+  demo_suppliers: "3 موردين مطابقين",
+  demo_contract: "عقد قصير الأمد",
 
   // Services
   svc_title: "كل ما تحتاجه فعاليتك أو عملياتك",
