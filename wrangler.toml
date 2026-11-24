@@ -2,10 +2,9 @@ name = "relayksa"
 pages_build_output_dir = "public"
 compatibility_date = "2026-11-01"
 
-# Waitlist + business leads. database_id is filled in when the
-# remote database is created (`npm run db:create`); local dev ignores it.
+# Client requests + supplier applications (D1).
 [[d1_databases]]
 binding = "DB"
 database_name = "relayksa-db"
-database_id = "00000000-0000-0000-0000-000000000000"
+database_id = "c66439a7-5859-47a2-a165-2ca121ac7d9a"
 migrations_dir = "migrations"
